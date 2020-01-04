@@ -29,8 +29,8 @@ class Scissors():
     def __init__(self):
         self.type = "scissors"
     def attack(self,roll):
-        if roll.type == "win":
-            return True
+        if roll.type == "paper":
+            return "win"
         elif roll.type == "scissors":
             return "tie"
         elif roll.type == "rock":
